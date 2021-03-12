@@ -1,7 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
-  try{
 const year = date.getFullYear();
 if(year < 1970){
   if(date !=''){
@@ -26,5 +25,4 @@ if(year < 1970){
     return('Unable to determine the time of year!')
   }
   }   
-}
-}
+};
